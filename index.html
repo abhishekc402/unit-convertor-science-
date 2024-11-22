@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter-wrapper">
+        <h1>Unit Converter</h1>
+        <div class="category-selector">
+          <button class="category-btn active" data-category="length">Length</button>
+          <button class="category-btn" data-category="area">Area</button>
+          <button class="category-btn" data-category="weight">Weight</button>
+          <button class="category-btn" data-category="temperature">Temperature</button>
+          <button class="category-btn" data-category="time">Time</button>
+        </div>
+        
+        <div class="converter-box">
+          <div class="input-group">
+            <input type="number" id="fromValue" placeholder="Enter value" />
+            <select id="fromUnit"></select>
+          </div>
+          
+          <div class="equals">=</div>
+          
+          <div class="input-group">
+            <input type="number" id="toValue" placeholder="Result" readonly />
+            <select id="toUnit"></select>
+          </div>
+        </div>
+        
+        <div class="formula-display">
+          <p id="formulaText">Enter a value to see conversion</p>
+        </div>
+        
+        <div class="watermark">
+          Powered By "TheExamify"
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
